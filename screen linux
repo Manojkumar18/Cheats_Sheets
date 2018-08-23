@@ -8,6 +8,7 @@ screen -S session_name -X quit	Terminate the session named "session_name"
 
 
 ######################################Command	Description#############################################
+
 Ctrl+a c	Create a new window
 Ctrl+a k	Kill the current window (Ctrl+d does the same thing)
 Ctrl+a "	List the opened windows
