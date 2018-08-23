@@ -1,0 +1,45 @@
+#######################################Command	Description###########################################
+
+screen	Start a session
+screen -ls	List the sessions and their status
+screen -S session_name	Start a session named "session_name"
+screen -x session_name	Resume the session named "session_name"
+screen -S session_name -X quit	Terminate the session named "session_name"
+
+
+######################################Command	Description#############################################
+Ctrl+a c	Create a new window
+Ctrl+a k	Kill the current window (Ctrl+d does the same thing)
+Ctrl+a "	List the opened windows
+Ctrl+a p/n	Go to the previous/next window
+Ctrl+a 0-9	Go to the window n
+Ctrl+a d	Detach the screen session
+Ctrl+a :	Enter the command mode
+
+---------------------------------------Split mode----------------------------------------------------
+
+####################################Command	Action###################################################
+
+Ctrl+a S	Split horizontally
+Ctrl+a ❘	Split vertically
+Ctrl+a <Tab>	Go to the next region
+Ctrl+a X	Close the current region
+Ctrl+a Q	Close all the regions but the current one
+
+---------------------------------------Copy mode----------------------------------------------------
+
+#######################################Command	Action##############################################
+
+Ctrl+a <Esc>/[	Enter the copy mode
+<Space>	Mark a selection
+Ctrl+a ]	Paste the content of the buffer
+
+-----------------------------------Shared session---------------------------------------------------
+
+###################################Command	Action##################################################
+
+Ctrl+a : multiuser on	Enable the multiuser mode
+Ctrl+a : acladd username	Give the access rights to username
+Ctrl+a : acldel username	Revoke the access rights to username
+Ctrl+a *	List the other connections to the session
+screen -x owner/session_name	Join a session started by another user
